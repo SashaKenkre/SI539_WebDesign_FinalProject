@@ -28,7 +28,7 @@ header{
 #logo {
 	/* width: 100%;  */
 	height: 150px;
-	content: url('../images/header_logo_mobile.png');
+	content: url('../images/header_logo_mobile1.png');
 }
 
 hr {
@@ -222,7 +222,7 @@ footer{
 	}
 
 	#logo {
-		content: url("../images/header_logo2.png");
+		content: url("../images/header_logo1.png");
 		width: 500px;
 		height: auto;
 	}

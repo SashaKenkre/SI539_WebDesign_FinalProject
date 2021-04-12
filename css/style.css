@@ -615,7 +615,7 @@ footer{
 		align-items: center;
 	}
 
-	.line{
+	header .line{
 		display: none;
 	}
 
@@ -655,6 +655,9 @@ footer{
 		text-align: left;
 		padding-left: 10px;
 		/* justify-content: space-evenly; */
+	}
+	.line{
+		display: none;
 	}
 
 	.list_1{
@@ -870,6 +873,10 @@ footer{
 		height: 350px;
 		width: 260px;
 		margin: 0;
+	}
+
+	header .line{
+		display: none;
 	}
 
 	.desktop_text{

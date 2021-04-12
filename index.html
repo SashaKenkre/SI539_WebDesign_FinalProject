@@ -10,15 +10,19 @@
 	<title>Sasha's Favorite Things</title>
 </head>
 <body>
+	<div class="skip"><a href="#main">Skip to Main Content</a></div>
 	<header>
-		<div id="logo"></div>
+		<a href = "index.html" div id="logo" disabled aria-hidden="true">
+			<i class="myclass"></i>
+			<span class="sr-only">Visit index.html</span>
+			</a>
 		<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/photo3idea-studio" title="photo3idea_studio">photo3idea_studio</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
 		<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/photo3idea-studio" title="photo3idea_studio">photo3idea_studio</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
 		<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/photo3idea-studio" title="photo3idea_studio">photo3idea_studio</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
 		<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/photo3idea-studio" title="photo3idea_studio">photo3idea_studio</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
-		<hr>
+		<div id="line"></div>
 		<nav>
-			<ul class="nav-links">
+			<ul class="nav_links">
 				<li id="current"><a href = "index.html">ABOUT ME</a></li>
 				<li><a href = "bodie.html">MY PUPPY</a></li>
 				<li><a href = "media.html">MOVIES & TV</a></li>
@@ -26,32 +30,87 @@
 			</ul>
 		</nav>
 	</header>
-	<main>
-		<div class="container">
+	<main id="main">
+		<div class="parallax_image_i">
 			<h1>Hey! It's Sasha!</h1>
-			<img id='about-image' src="images/sasha.jpg" alt="picture of Sasha">
-			<p class="about-text">I grew up in Michigan, went to undergrad at U of M, and worked in NYC for a few years. But, now I'm back in good ol' Michigan! </p>
-			<p class="about-text">Some things I like:</p>
-				<ul class="container-list">
-					<li>Going for karaoke night at my local bar</li>
-					<li>Reading</li>
-					<li>Anything chocolate</li>
-				</ul>
-
-			<p class="about-text">Things I dislike:</p>
-				<ul class="container-list">
-					<li>Bugs (Spiders? No thanks. Cockroaches? Don't even get me started!)</li>
-					<li>Cold weather (Heated blankets and space heaters for the win!)</li>
-					<li>Gory movies or shows</li>
-				</ul>
-			<p class="about-text">Feel free to click through and learn more about the things I love: <a class="links" href = "bodie.html">my puppy</a>, <a class="links" href = "media.html">movies & TV shows</a>, and <a class="links" href = "travel.html">travel</a>!</p>
-			<!-- </div> -->
+			<!-- <a href='https://www.freepik.com/vectors/background'>Background vector created by Harryarts - www.freepik.com</a> -->
+			</div>
+		<div class="container">
+			<img id='about_image' src="images/sasha.jpg" alt="picture of Sasha">
+			<p class="about_text">I grew up in Michigan, went to undergrad at U of M, and worked in NYC for a few years. But, now I'm back in good ol' Michigan! </p>
+			<div class='list_grid'>
+				<div class="list_1">Some things I like:
+					<ul class="container_list">
+						<li>Going for karaoke night at my local bar</li>
+						<li>Reading</li>
+						<li>Anything chocolate</li>
+					</ul>
+				</div>
+				<div class="list_2">Things I dislike:
+					<ul class="container_list">
+						<li>Bugs (Spiders? No thanks. Cockroaches? Don't even get me started!)</li>
+						<li>Cold weather (Heated blankets and space heaters for the win!)</li>
+						<li>Gory movies or shows</li>
+					</ul>
+				</div>
+			</div>
+			<p class="about_text">Feel free to click through and learn more about the things I love:</p>
+			<div class="bottom-container">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<a href="bodie.html">
+								<img src="images/puppy2.png" alt="bodie">
+							 </a>
+			<!-- <a href='https://www.freepik.com/vectors/dog'>Dog vector created by catalyststuff - www.freepik.com</a> -->
+						</div>
+						<div class="flip-card-back">
+							<p>My Puppy</p>
+							<a class='flip_link' href="bodie.html">Learn more</a>
+						</div>
+					</div>
+				</div>
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+						<a href="media.html">
+							<img src="images/movies.png" alt="movie reel and popcorn">
+						</a>
+						</div>
+						<div class="flip-card-back">
+							<p>Movies & TV Shows</p>
+							<a class='flip_link' href="media.html">Learn more</a>
+						</div>
+					</div>
+				</div>
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="images/travel_flip.png" alt="travel">
+							<!-- <a href='https://www.freepik.com/vectors/travel'>Travel vector created by macrovector - www.freepik.com</a> -->
+						</div>
+						<div class="flip-card-back">
+							<p>Travel</p>
+							<a class='flip_link' href="travel.html">Learn more</a>
+						</div>
+					</div>
+				</div>
+			</div>	
+			
 
 	</div>
 	</main>
 
 	<footer>
 		<p>Sasha Kenkre &copy; 2021</p>
+		<div id="social_contact">
+			<a div id="insta" href="https://www.instagram.com/sashaferoz63/" disabled aria-hidden="true">
+				<i class="myclass"></i>
+				<span class="sr-only">Visit index.html</span>
+				</a>
+			<a div id = "contact" href="contact.html">Contact</a>
+		</div>
 	</footer>
+	
 </body>
 </html>

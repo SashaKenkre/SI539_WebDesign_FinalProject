@@ -10,13 +10,18 @@
 	<title>My Puppy</title>
 </head>
 <body>
+	<div class="skip"><a href="#main">Skip to Main Content</a></div>
 	<header>
-		<div id="logo"></div>
+		<!-- <a href='https://www.freepik.com/vectors/background'>Background vector created by starline - www.freepik.com</a> -->
+		<a href = "index.html" div id="logo" disabled aria-hidden="true">
+			<i class="myclass"></i>
+			<span class="sr-only">Visit index.html</span>
+			</a>
 		<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/photo3idea-studio" title="photo3idea_studio">photo3idea_studio</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
 		<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
-		<hr>
+		<div id="line"></div>
 		<nav>
-			<ul class="nav-links">
+			<ul class="nav_links">
 				<li><a href = "index.html">ABOUT ME</a></li>
 				<li id="current"><a href = "bodie.html">MY PUPPY</a></li>
 				<li><a href = "media.html">MOVIES & TV</a></li>
@@ -24,13 +29,15 @@
 			</ul>
 		</nav>
 	</header>
-	<main>
+	<main id="main">
+		<div class="parallax_image_b">
+			<h1>My Puppy, Bodie!</h1>
+			</div>
 		<div class="container">
-			<h1>My puppy, Bodie!</h1>
 			<p>My family's puppy, Bodie, is the newest addition to our family. We brought him home in December 2020 and it's been a wild ride since. 
 				We've never had a dog before, so we were in for a big change when we got him. While he's a lot of work, you can't help but love him and his adorableness.
 			Some of the nicknames I've already bestowed upon him are: Boopers, Boops, and Bodie Bear! </p>
-			<div class='pic-grid'>
+			<div class='pic_grid_b'>
 				<figure class="pic1">
 					<img src="images/bodie1.jpg" class="pic_img" alt="bodie in lap">
 					<figcaption> The ride home from picking up Bodie! He was such a little nugget.</figcaption>
@@ -61,6 +68,13 @@
 	<br>
 	<footer>
 		<p>Sasha Kenkre &copy; 2021</p>
+		<div id="social_contact">
+			<a div id="insta" href="https://www.instagram.com/sashaferoz63/" disabled aria-hidden="true">
+				<i class="myclass"></i>
+				<span class="sr-only">Visit index.html</span>
+			</a>
+			<a div id = "contact" href="contact.html">Contact</a>
+		</div>
 	</footer>
 </body>
 </html>

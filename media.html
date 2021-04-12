@@ -10,15 +10,19 @@
 	<title>Movies & TV Shows</title>
 </head>
 <body>
+	<div class="skip"><a href="#main">Skip to Main Content</a></div>
 	<header>
-		<div id="logo"></div>
+		<a href = "index.html" div id="logo" disabled aria-hidden="true">
+			<i class="myclass"></i>
+			<span class="sr-only">Visit index.html</span>
+			</a>
 		<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/photo3idea-studio" title="photo3idea_studio">photo3idea_studio</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
 		<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/photo3idea-studio" title="photo3idea_studio">photo3idea_studio</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
 		<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/photo3idea-studio" title="photo3idea_studio">photo3idea_studio</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
 		<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/photo3idea-studio" title="photo3idea_studio">photo3idea_studio</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
-		<hr>
+		<div class="line"></div>
 		<nav>
-			<ul class="nav-links">
+			<ul class="nav_links">
 				<li><a href = "index.html">ABOUT ME</a></li>
 				<li><a href = "bodie.html">MY PUPPY</a></li>
 				<li id="current"><a href = "media.html">MOVIES & TV</a></li>
@@ -26,113 +30,216 @@
 			</ul>
 		</nav>
 	</header>
-	<main>
-		<div class="container">
+	<main id="main">
+		<div class="parallax_image_m">
 			<h1>Movies and TV shows!</h1>
 			<!-- <a href='https://www.freepik.com/vectors/arrow'>Arrow vector created by macrovector - www.freepik.com</a> -->
-			<p>One of my favorite things to do is binge-watch tv shows. I also love to watch movies with friends. Ever since COVID, 
+			</div>
+		<div class="container">
+			<p class="mobile_text">One of my favorite things to do is binge-watch tv shows. I also love to watch movies with friends. Ever since COVID, 
+				since we couldn't go to the movie theater, my friends and I started to use TeleParty and the in other watch in group functions on streaming sites. 
+				A definite game-changer for watching things separately, but in groups! Click an image to learn more about the movie(s) or show!</p>
+				<br>
+			<p class="desktop_text">One of my favorite things to do is binge-watch tv shows. I also love to watch movies with friends. Ever since COVID, 
 				since we couldn't go to the movie theater, my friends and I started to use TeleParty and the in other watch in group functions on streaming sites. 
 				A definite game-changer for watching things separately, but in groups!</p>
-			<br>
-			<p class="p_space_below">Some of my favorite movies: </p>
-			<div class='pic-grid'>
-					<figure class="pic1">
-						<h2 class="pic_title">Austin Powers Trilogy</h2>
-						<h3 class="pic_subtitle">Austin Powers: International Man of Mystery</h3>
-						<h3 class="pic_subtitle">Austin Powers: The Spy Who Shagged Me</h3>
-						<h3 class="pic_subtitle">Austin Powers in Goldmember</h3>
-					 	<img src="images/austin_powers.jpg" class="pic_img" alt="all 3 austin powers movie names and images">
-					  <!-- image source: https://www.amazon.com/Feature-International-Mystery-Shagged-Goldmember/dp/B008MIMWOO -->
-					  	<figcaption> The Austin Powers movies are parody films. They're so ridiculous that I absolutely love them. There are so many quotable lines that I use all the time.</figcaption>
-					</figure>
-					<figure class="pic2">
-						<h2 class="pic_title">Shrek 1 and 2</h2>
-						<h3 class="pic_subtitle">Shrek</h3>
-						<h3 class="pic_subtitle">Shrek 2</h3>
-					  <img src="images/shrek.png" class="pic_img" alt="shrek 1 and 2 movie posters">
-					  <!-- image source https://www.castlehaven.org.uk/whats-on/event/924 -->
-					  <figcaption>The Shrek movies are classics at this point. The first two movies are two of my favorite animated films. They're fun to enjoy at any age!</figcaption>
-					</figure>
-					<figure class="pic3">
-						<h2 class="pic_title">Rush Hour Trilogy</h2>
-						<h3 class="pic_subtitle">Rush Hour</h3>
-						<h3 class="pic_subtitle">Rush Hour 2</h3>
-						<h3 class="pic_subtitle">Rush Hour 3</h3>
-					  	<img src="images/rush_hour2-02.png" class="pic_img" alt="all 3 rush hour movie names and images">
-					  <!--image source: https://www.amazon.com/Rush-Hour-Triple-Feature-Franchis/dp/B004WBZUQ2/ref=sr_1_40?dchild=1&keywords=rush+hour+movies&qid=1616341711&sr=8-40  -->
-					  	<figcaption> The Rush Hour movies are hilarious. Jackie Chan and Chris Tucker have great comedic chemistry and make these movies worth watching over and over again. These are another set of movies that I love to quote lines from.</figcaption>
-					</figure>
-					<figure class="pic4">
-						<h2 class="pic_title">She's the Man</h2>
-					  	<img src="images/shes_the_man.jpg" class="pic_img" alt="she's the man movie poster">
-					  <!--image source https://www.amazon.com/Shes-Man-Amanda-Bynes/dp/B01M3SYLJJ  -->
-					  	<figcaption>I'm a sucker for a romcom and this movie fits the bill. Amanda Bynes is iconic in it (as she always has been in all her work), and again, I could quote this movie for days. One of my favorite lines (this scene is hilarious) is: "When I close my eyes, I see you for what you truly are…which is UGLY!"</figcaption>
-					</figure>
-					<figure class="pic5">
-						<h2 class="pic_title">Hocus Pocus</h2>
-					  	<img src="images/hocus_pocus.jpeg" class="pic_img" alt="Hocus Pocus movie poster">
-					  <!--image source: https://movies.disney.com/hocus-pocus  -->
-					  	<figcaption>Hocus Pocus is a must-watch movie for Halloween. The Sanderson sisters are funny, dopey, and a bit crazy. I watch this movie every year with friends, it's a classic!</figcaption>
-					</figure>
+				<br>
+			<h3 class="empty_text">EMPTY</h3>
+			<p class="p_space_below">Some of my Favorite Movies</p>
+			<div class='pic_grid'>
+				<figure class="pic1">
+					<h2 class="pic_title">Austin Powers Trilogy</h2>
+					<h3 class="pic_subtitle">Austin Powers: International Man of Mystery</h3>
+					<h3 class="pic_subtitle">Austin Powers: The Spy Who Shagged Me</h3>
+					<h3 class="pic_subtitle">Austin Powers in Goldmember</h3>
+					<div class ="view">
+					<img src="images/austin_powers.jpg" class="pic_img" alt="all 3 austin powers movie names and images">
+					<!-- image source: https://www.amazon.com/Feature-International-Mystery-Shagged-Goldmember/dp/B008MIMWOO -->
+					<div class="mask">
+						<a class="mask_link" href="https://en.wikipedia.org/wiki/Austin_Powers" target=_blank disabled aria-hidden="true">
+							<i class="myclass"></i>
+							<span class="sr-only">Visit Austin Powers wikipedia page</span></a>
+						<a href="https://en.wikipedia.org/wiki/Austin_Powers" target="_blank" class="info">Learn more <br> about the franchise</a>
+					</div></div>
+					<figcaption> The Austin Powers movies are parody films. They're so ridiculous that I absolutely love them. There are so many quotable lines that I use all the time.</figcaption>
+				</figure>
+				<figure class="pic2">
+					<h2 class="pic_title">Rush Hour Trilogy</h2>
+					<h3 class="pic_subtitle">Rush Hour</h3>
+					<h3 class="pic_subtitle">Rush Hour 2</h3>
+					<h3 class="pic_subtitle">Rush Hour 3</h3>
+					<div class="view">
+					<img src="images/rush_hour2-02.png" class="pic_img" alt="all 3 rush hour movie names and images">
+					<!--image source: https://www.amazon.com/Rush-Hour-Triple-Feature-Franchis/dp/B004WBZUQ2/ref=sr_1_40?dchild=1&keywords=rush+hour+movies&qid=1616341711&sr=8-40  -->
+					<div class="mask">   
+						<a class="mask_link" href="https://en.wikipedia.org/wiki/Rush_Hour_(franchise)" target="_blank" disabled aria-hidden="true">
+							<i class="myclass"></i>
+							<span class="sr-only">Visit Rush Hour wikipedia page</span></a>>
+						<a href="https://en.wikipedia.org/wiki/Rush_Hour_(franchise)" target="_blank" class="info">Learn more <br> about the franchise</a>  
+					</div></div>
+					<figcaption> The Rush Hour movies are hilarious. Jackie Chan and Chris Tucker have great comedic chemistry and make these movies worth watching over and over again. These are another set of movies that I love to quote lines from.</figcaption>
+				</figure>
+				<figure class="pic3">
+					<h2 class="pic_title">Shrek 1 and 2</h2>
+					<h3 class="pic_subtitle">Shrek</h3>
+					<h3 class="pic_subtitle">Shrek 2</h3>
+					<h3 class="empty_text">Filler</h3>
+					<div class="view">
+					<img src="images/shrek2.jpeg" class="pic_img" alt="shrek 1 and 2 movie posters">
+					<!-- image source https://www.castlehaven.org.uk/whats-on/event/924 -->
+					<div class="mask">   
+						<a class="mask_link" href="https://en.wikipedia.org/wiki/Shrek_(franchise)" target="_blank" disabled aria-hidden="true">
+							<i class="myclass"></i>
+							<span class="sr-only">Visit Shrek wikipedia page</span></a>
+						<a href="https://en.wikipedia.org/wiki/Shrek_(franchise)" target="_blank" class="info">Learn more <br> about the franchise</a>
+					</div></div>
+					<figcaption>The Shrek movies are classics at this point. The first two movies are two of my favorite animated films. I think I may prefer the second to the first though.</figcaption>
+				</figure>
+				<figure class="pic4">
+					<h2 class="pic_title">She's the Man</h2>
+					<h3 class="empty_text_tablet">Filler</h3>
+					<h3 class="empty_text_tablet">Filler</h3>
+					<div class="view">
+					<img src="images/shes_the_man.jpg" class="pic_img" alt="she's the man movie poster">
+					<!--image source https://www.amazon.com/Shes-Man-Amanda-Bynes/dp/B01M3SYLJJ  -->
+					<div class="mask">   
+						<a class="mask_link" href="https://www.imdb.com/title/tt0454945/" target="_blank" disabled aria-hidden="true">
+							<i class="myclass"></i>
+							<span class="sr-only">Visit She's the Man IMDb page</span></a>
+						<a href="https://www.imdb.com/title/tt0454945/" target="_blank" class="info">Learn more <br> about the movie</a> 
+						</div></div>
+					<figcaption>I'm a sucker for a romcom and this movie fits the bill. Amanda Bynes is iconic in it (as she always has been in all her work). One of my favorite lines is: "When I close my eyes, I see you for what you truly are…which is UGLY!"</figcaption>
+				</figure>
+				<figure class="pic5">
+					<h2 class="pic_title">Hocus Pocus</h2>
+					<div class="view">
+					<img src="images/hocus_pocus.jpeg" class="pic_img" alt="Hocus Pocus movie poster">
+					<!--image source: https://movies.disney.com/hocus-pocus  -->
+					<div class="mask">   
+						<a class="mask_link" href="https://www.imdb.com/title/tt0107120/" target="_blank" disabled aria-hidden="true">
+							<i class="myclass"></i>
+							<span class="sr-only">Visit Hocus Pocus IMDb page</span></a>
+						<a href="https://www.imdb.com/title/tt0107120/" target="_blank" class="info">Learn more <br> about the movie</a>
+					</div></div>
+					<figcaption>Hocus Pocus is a must-watch movie for Halloween. The Sanderson sisters are funny, dopey, and a bit crazy. I watch this movie every year with friends, it's a classic!</figcaption>
+				</figure>
 					<figure class="pic6">
 						<h2 class="pic_title">The Way Way Back</h2>
-					  	<img src="images/the_way_way_back.jpg" class="pic_img" alt="the way way back movie poster">
+					  	<div class="view">
+						<img src="images/the_way_way_back.jpg" class="pic_img" alt="the way way back movie poster">
 					  <!-- image source: https://www.amazon.com/Way-Back-Poster-60-96cm-91-44cm/dp/B015EYN81Y/ref=pd_lpo_201_img_0/130-0562818-2230345?_encoding=UTF8&pd_rd_i=B015EYN81Y&pd_rd_r=ec06f74c-7a93-430d-b0a8-81507dad438d&pd_rd_w=SSCT1&pd_rd_wg=BfnyM&pf_rd_p=337be819-13af-4fb9-8b3e-a5291c097ebb&pf_rd_r=ZGMB0QBYH7F5Q14K150J&psc=1&refRID=ZGMB0QBYH7F5Q14K150J -->
-					  	<figcaption>This indie movie gets me every time. It's a coming of age story of a young boy, and it spans from fun to heartbreaking. Steve Carrel is a real jerk and plays it so well. All the actors did a great job!</figcaption>
+					  <div class="mask">   
+						<a class="mask_link" href="https://www.imdb.com/title/tt1727388/" target="_blank" disabled aria-hidden="true">
+							<i class="myclass"></i>
+							<span class="sr-only">Visit The Way Way Back IMDb page</span></a>
+						<a href="https://www.imdb.com/title/tt1727388/" target="_blank" class="info">Learn more <br> about the movie</a> 
+					</div></div>
+					  <figcaption>This indie movie gets me every time. It's a coming of age story of a young boy, and it spans from fun to heartbreaking. Steve Carrel is a real jerk and plays it so well. All the actors did a great job!</figcaption>
 					</figure>
-			</div>
-			<div id="line"></div>
-			<p class="p_space_above">Some of my favorite TV shows: </p>
-			<p class="p_space_below"></p>
-			<div class='pic-grid'>
-					<figure class="pic1">
-						<h2 class="pic_title">Psych</h2>
-					 	<img src="images/psych.jpeg" class="pic_img" alt="psych movie poster with shawn and gus">
-					  <!-- image source: https://www.themoviedb.org/tv/1447-psych/images/posters -->
-					  	<figcaption> Psych is a comedic detective show. The friendship between Shawn and Gus is hilarious, and the characters are so special. I've rewatched this show numerous times because I enjoy the characters and stories so much.</figcaption>
-					</figure>
-					<figure class="pic2">
-						<h2 class="pic_title">Leverage</h2>
-					  	<img src="images/leverage.jpeg" class="pic_img" alt="leverage show poster">
-					  <!--image source: https://www.themoviedb.org/tv/7482-leverage/images/posters  -->
-					  	<figcaption>Leverage ended too soon. It was a action crime drama which followed a five person robin-hood type team. It was a creative concept and well executed. I most of the characters - not a fan of Sophie. 
-							  Each character brings something unique to the show which makes it engaging to watch.</figcaption>
-					</figure>
-					<figure class="show3">
-						<h2 class="pic_title">Scrubs</h2>
-					  	<img src="images/scrubs.jpeg" class="pic_img" alt="scrubs show poster">
-					  <!-- image source: https://www.themoviedb.org/tv/4556-scrubs/images/posters -->
-					  	<figcaption>Scrubs is a medical comedy drama that could make me laugh and cry. It was a well written show with great characters. And while people hated the 9th season, I enjoyed it. 
-							  I wish they'd made it a spinoff show instead of a continuation of the original, because I think people would've like it more.</figcaption>
-					</figure>
-					<figure class="pic4">
-						<h2 class="pic_title">Avatar the Last Airbender</h2>
-					  	<img src="images/ATLA.jpeg" class="pic_img" alt="avatar the last airbender show poster">
-					  <!--image source https://www.themoviedb.org/tv/246-avatar-the-last-airbender/images/posters  -->
-					  	<figcaption>This show is great for any age. It teaches life lessons, is engaging, and has such interesting characters. Zuko's character growth is *chef's kiss*, perfection. 
-							  He and Uncle Iroh are my favorite characters from the show.</figcaption>
-					</figure>
-					<figure class="pic5">
-						<h2 class="pic_title">Bones</h2>
-					  	<img src="images/bones.jpeg" class="pic_img" alt="Bones show poster">
-					  <!--image source: https://www.themoviedb.org/tv/1911-bones/images/posters  -->
-					  	<figcaption>Bones is a crime-procedural comdey drama show. Some of the serial killers were really creepy and well acted. The storyline is interesting, and the characters are all special in their own way. 
-							  Sweets was one of my favorite characters in the show. </figcaption>
-					</figure>
-					<figure class="pic6">
-						<h2 class="pic_title">Crash Landing on You</h2>
-					  <img src="images/CLOY.jpeg" class="pic_img" alt="crash landing on you movie poster">
-					  <!-- image source https://www.themoviedb.org/tv/94796/images/posters -->
-					  <figcaption>I recently got into watching Korean Dramas and this one was one of the first few I watched and kept me wanting to watch more. The actors are fantastic, the original soundtrack is amazing, and the story is equally cute and thrilling.</figcaption>
-					</figure>
-			</div>
 			</div>
 
-			<br>
+			<div class="line"></div>
+		
+			<p class="p_space_above">Some of my Favorite TV Shows </p>
+			<p class="p_space_below"></p>
+			<div class='pic_grid'>
+				<figure class="pic1">
+					<h2 class="pic_title">Psych</h2>
+					<div class="view">
+					<img src="images/psych.jpeg" class="pic_img" alt="psych movie poster with shawn and gus">
+					<!-- image source: https://www.themoviedb.org/tv/1447-psych/images/posters -->
+					<div class="mask"> 
+						<a class="mask_link" href="https://www.imdb.com/title/tt0491738/" target="_blank" disabled aria-hidden="true">
+							<i class="myclass"></i>
+							<span class="sr-only">Visit Psych IMDb page</span></a>
+						<a href="https://www.imdb.com/title/tt0491738/" target="_blank" class="info">Learn more <br> about the show</a>
+					</div></div>
+					<figcaption> Psych is a comedic detective show. The friendship between Shawn and Gus is hilarious, and the characters are so special. I've rewatched this show numerous times because I enjoy the characters and stories so much.</figcaption>
+				</figure>
+				<figure class="pic2">
+					<h2 class="pic_title">Leverage</h2>
+					<div class="view">
+					<img src="images/leverage.jpeg" class="pic_img" alt="leverage show poster">
+					<!--image source: https://www.themoviedb.org/tv/7482-leverage/images/posters  -->
+					<div class="mask">   
+						<a class="mask_link" href="https://www.imdb.com/title/tt1103987/" target="_blank" disabled aria-hidden="true">
+							<i class="myclass"></i>
+							<span class="sr-only">Visit Leverage IMDb page</span></a>
+						<a href="https://www.imdb.com/title/tt1103987/" target="_blank" class="info">Learn more <br> about the show</a>
+					</div></div>
+					<figcaption>Leverage ended too soon. It was a action crime drama which followed a five person robin-hood type team. It was a creative concept and well executed. I most of the characters - not a fan of Sophie. 
+							  Each character brings something unique to the show which makes it engaging to watch.</figcaption>
+				</figure>
+				<figure class="pic3">
+					<h2 class="pic_title">Scrubs</h2>
+					<div class="view">
+					<img src="images/scrubs.jpeg" class="pic_img" alt="scrubs show poster">
+					<!-- image source: https://www.themoviedb.org/tv/4556-scrubs/images/posters -->
+					<div class="mask">   
+						<a class="mask_link" href="https://www.imdb.com/title/tt0285403/" target="_blank" disabled aria-hidden="true">
+							<i class="myclass"></i>
+							<span class="sr-only">Visit Scrubs IMDb page</span></a>
+						<a href="https://www.imdb.com/title/tt0285403/" target="_blank" class="info">Learn more <br> about the show</a>
+					</div></div>
+					<figcaption>Scrubs is a medical comedy drama that could make me laugh and cry. It was a well written show with great characters. And while people hated the 9th season, I enjoyed it. 
+							  I wish they'd made it a spinoff show instead of a continuation of the original, because I think people would've like it more.</figcaption>
+				</figure>
+				<figure class="pic4">
+					<h2 class="pic_title">Avatar the Last Airbender</h2>
+					<div class="view">
+					<img src="images/ATLA.jpeg" class="pic_img" alt="avatar the last airbender show poster">
+					<!--image source https://www.themoviedb.org/tv/246-avatar-the-last-airbender/images/posters  -->
+					<div class="mask">   
+						<a class="mask_link" href="https://www.imdb.com/title/tt0417299/" target="_blank" disabled aria-hidden="true">
+							<i class="myclass"></i>
+							<span class="sr-only">Visit Avatar The Last Airbender IMDb page</span></a>
+						<a href="https://www.imdb.com/title/tt0417299/" target="_blank" class="info">Learn more <br> about the show</a>
+					</div></div>
+					<figcaption>This show is great for any age. It teaches life lessons, is engaging, and has such interesting characters. Zuko's character growth is *chef's kiss*, perfection. 
+							  He and Uncle Iroh are my favorite characters from the show.</figcaption>
+				</figure>
+				<figure class="pic5">
+					<h2 class="pic_title">Bones</h2>
+					<div class = "view">
+					<img src="images/bones.jpeg" class="pic_img" alt="Bones show poster">
+					<!--image source: https://www.themoviedb.org/tv/1911-bones/images/posters  -->
+					<div class="mask">   
+						<a class="mask_link" href="https://www.imdb.com/title/tt0460627/" target="_blank" disabled aria-hidden="true">
+							<i class="myclass"></i>
+							<span class="sr-only">Visit Bones IMDb page</span></a>
+						<a href="https://www.imdb.com/title/tt0460627/" target="_blank" class="info">Learn more <br> about the show</a>
+					</div></div>
+					<figcaption>Bones is a crime-procedural comdey drama show. Some of the serial killers were really creepy and well acted. The storyline is interesting, and the characters are all special in their own way. 
+							  Sweets was one of my favorite characters in the show. </figcaption>
+				</figure>
+				<figure class="pic6">
+					<h2 class="pic_title">Crash Landing on You</h2>
+					<div class="view">
+					<img src="images/CLOY.jpeg" class="pic_img" alt="crash landing on you movie poster">
+					<!-- image source https://www.themoviedb.org/tv/94796/images/posters -->
+					<div class="mask">   
+						<a class="mask_link" href="https://www.imdb.com/title/tt10850932/" target="_blank" disabled aria-hidden="true">
+							<i class="myclass"></i>
+							<span class="sr-only">Visit Crash Landing on You IMDb page</span></a>
+						<a href="https://www.imdb.com/title/tt10850932/" target="_blank" class="info">Learn more <br> about the show</a>
+					</div></div>
+					<figcaption>I recently got into watching Korean Dramas and this one was one of the first few I watched and kept me wanting to watch more. The actors are fantastic, the original soundtrack is amazing, and the story is equally cute and thrilling.</figcaption>
+				</figure>
+			</div>
+		</div>
+
+		<br>
 	</main>
 
 	<footer>
 		<p>Sasha Kenkre &copy; 2021</p>
+		<div id="social_contact">
+			<a div id="insta" href="https://www.instagram.com/sashaferoz63/" disabled aria-hidden="true">
+				<i class="myclass"></i>
+				<span class="sr-only">Visit index.html</span>
+			</a>
+			<a div id = "contact" href="contact.html">Contact</a>
+		</div>
 	</footer>
 </body>
 </html>

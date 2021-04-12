@@ -487,7 +487,7 @@ figcaption {
 	flex-direction: column;
 }
 
-.form-group #line{
+.form-group .line{
 	display:none;
 }
 
@@ -615,7 +615,7 @@ footer{
 		align-items: center;
 	}
 
-	#line{
+	.line{
 		display: none;
 	}
 
@@ -816,7 +816,7 @@ footer{
 		border: none;
 	}
 
-	.form-group #line{
+	.form-group .line{
 		display:block;
 		width: 50%;
 	}

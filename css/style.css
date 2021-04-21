@@ -9,7 +9,7 @@ html {
 body{
 	margin: 0;
   	padding: 0;
-  	font-family: "Oswald", sans-serif;
+  	font-family: "Montserrat", sans-serif;
   	font-size: 16px;
 }
 
@@ -24,7 +24,6 @@ body{
 
 header{
 	background: #21597E;
-	text-transform: uppercase;
 	padding-top: 20px;
 	color: white;
 	font-size: 30px;
@@ -142,13 +141,13 @@ header{
 #current a{
 	color: #8AD24B;
 	outline: double #8AD24B;
-	background-color: black;
+	background-color: #00000065;
 }
 
 .skip a{
 	background: white;
 	color: black;
-	font-style: bold;
+	font-weight: 400;
 	left: 5px;
 	position: absolute;
 	top: -50px;
@@ -178,6 +177,8 @@ header{
 
 .mobile_text{
 	font-size: 18px;
+	padding: 10px;
+	text-align: center;
 }
 
 .p_space_below{
@@ -203,13 +204,20 @@ header{
 	display: none;
 }
 
+.intro_text{
+	padding: 10px;
+	text-align: center;
+}
+
 #about_image{
 	display: block;
   	margin-left: auto;
+	border: solid #21597E;
   	margin-right: auto;
 	max-width: 500px;
   	height: 300px;
 	text-align: center;
+	margin-bottom: 10px;
 }
 
 .about_text{
@@ -368,15 +376,15 @@ h1 {
 	display: none;
 }
 
-.mobile_text{
-	display: contents;
-}
-
 .pic_grid, .pic_grid_b{
 	display: grid;
 	height: fit-content;
     grid-gap: 10px;
 	text-align: center;
+}
+
+.pic1{
+	padding-top: 10px;
 }
 
 .pic_img{
@@ -391,12 +399,14 @@ h1 {
 	font-weight:500;
 	font-size: 22px;
 	text-align: center;
-	padding-bottom: 5px;
+	padding-bottom: 10px;
+	padding-top: 5px;
 }
 
 .pic_subtitle{
 	font-size: 18px;
 	text-align: center;
+	padding-bottom: 5px;
 }
 
 .view {
@@ -436,7 +446,8 @@ h1 {
 
 figcaption {
 	border-bottom: solid#8AD24B;
-	padding-bottom: 15px;
+	padding-bottom: 20px;
+	padding-top: 10px;
 	font-size: 18px;
 }
 

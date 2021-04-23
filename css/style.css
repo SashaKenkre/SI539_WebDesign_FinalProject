@@ -11,6 +11,7 @@ body{
   	padding: 0;
   	font-family: "Montserrat", sans-serif;
   	font-size: 16px;
+	line-height:1.6em;
 }
 
 .line{
@@ -43,6 +44,7 @@ header{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border-bottom: 2px solid #8AD24B;
 
   	background-image: url('../images/paws.jpg');
 }
@@ -56,6 +58,7 @@ header{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border-bottom: 2px solid #8AD24B;
 
   	background-image: url('../images/movie-background.jpg');
 }
@@ -69,6 +72,7 @@ header{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border-bottom: 2px solid #8AD24B;
 
   	background-image: url('../images/travel_header.png');
 }
@@ -82,6 +86,7 @@ header{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border-bottom: 2px solid #8AD24B;
 
   	background-image: url('../images/dot_background2.jpg');
 }
@@ -100,13 +105,6 @@ header{
 	margin-bottom: 15px;
 	box-shadow: #000;
 }
-
-/* hr {
-	height:2px;
-	width: 75%;
-	border-color: #8AD24B;
-	background-color: #8AD24B;
-} */
 
 .nav_links{
 	display: flex;
@@ -160,6 +158,7 @@ header{
 .skip a:focus{
 	position:fixed;
 	transform: translateY(0%);
+	-webkit-transform: translateY(0%);
 	top:10px;
 }
 
@@ -233,8 +232,14 @@ header{
 	padding-left: 10px;
 }
 
+.list_1{
+	padding-top: 10px;
+	margin: 5px 0;
+}
+
 .list_2{
 	padding-top: 10px;
+	margin: 5px 0;
 }
 
 ul.container_list li{
@@ -249,26 +254,27 @@ ul.container_list li{
 	justify-content: center;
 	align-items: center;
 }
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
 .flip-card {
-	/* background-color: transparent; */
 	width: 150px;
 	height: 200px;
 	margin: 10px;
 }
   
-  /* This container is needed to position the front and back side */
 .flip-card-inner {
 	position: relative;
 	width: 150px;
 	height: 200px;
 	text-align: center;
 	transition: transform 0.8s;
+	-webkit-transition: transform 0.8s;
 	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
 }
 
 .flip-card-front img{
 	width: 150px;
+	height: 200px;
 	border: 2px solid #21597E;
 }
 
@@ -276,12 +282,11 @@ ul.container_list li{
 	pointer-events: none;
 }
 
-  /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
 	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
 }
 
-  /* Position the front and back side */
 .flip-card-front, .flip-card-back {
 	position: absolute;
 	width: 150px;
@@ -290,13 +295,11 @@ ul.container_list li{
 	backface-visibility: hidden;
 }
   
-  /* Style the front side (fallback if image is missing) */
 .flip-card-front {
 	background-color: #bbb;
 	color: black;
 }
   
-  /* Style the back side */
 .flip-card-back {
 	display: flex;
 	flex-direction: column;
@@ -304,6 +307,7 @@ ul.container_list li{
 	align-items: center;
 	background-color: #21597E;
 	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
 }
 
 .flip-card:hover .flip-card-inner,
@@ -311,9 +315,10 @@ ul.container_list li{
 .flip-card:active .flip-card-inner,
 .flip-card:focus .flip-card-inner {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
-.flip-card-back p{
+.flip-card-back h2{
 	color: white;
 	font-size: 22px;
 	margin: 20px;
@@ -391,7 +396,6 @@ h1 {
 	border: solid #21597E;
 	margin: 10px 0;
 	height: 250px;
-	/* width: 170px; */
 	z-index: 1;
 }
 
@@ -480,6 +484,8 @@ figcaption {
 	font-size: 18px;
 	padding-top: 10px;
 	padding-bottom: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
 	border-bottom: solid#8AD24B;
 }
 
@@ -487,7 +493,7 @@ figcaption {
 	font-size: 25px;
 	text-transform: uppercase;
 	font-weight: 600;
-	text-align: left;
+	text-align: center;
 	color: #21597E;
 	border-bottom: 2px solid #8AD24B;
 	padding-bottom: 10px;
@@ -495,19 +501,11 @@ figcaption {
 
 .form-group{
 	display: flex;
-	flex-direction: column;
+	padding: 20px;
 }
 
-.form-group .line{
+#contact_line .line{
 	display:none;
-}
-
-#name_pad{
-	padding-top: 10px;
-}
-
-label{
-	display: block;
 }
 
 input {
@@ -567,10 +565,8 @@ button:active{
 	color: black;
 }
 
-
 footer{
 	position: relative;
-	font-size: 16px;
 	font-weight: 400;
 	color: white;
 	background:black;
@@ -582,6 +578,9 @@ footer{
 	align-items: center;
 }
 
+footer p{
+	font-size: 14px;
+}
 
 #insta{
 	content: url("../images/ig2.png");
@@ -592,7 +591,7 @@ footer{
 #contact{
 	color: white;
 	font-weight: 400px;
-	font-size: 16px;
+	font-size: 14px;
 	text-decoration: none;
 }
 
@@ -612,14 +611,17 @@ footer{
 	color: white;
 }
 
-
 /* tablet */
 @media screen and (min-width : 768px) {
 	body{
 		font-size: 20px;
+		line-height:1.3em;
+		display: flex;
+		min-height: 100vh;
+		flex-direction: column;
 	}
 	header{
-		padding: 18px 10px 10px 30px;
+		padding: 18px 15px 10px 30px;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -635,10 +637,11 @@ footer{
 	}
 
 	#logo {
-		content: url("../images/header_logo1.png");
+		content: url("../images/header_logo_mobile1.png");
 		width: 300px;
 		height: auto;
 		margin-top: 10px;
+		margin-left: -40px;
 	}
 
 	.nav_links{
@@ -695,11 +698,16 @@ footer{
 		align-items: center;
 	}
 
+	.empty_text{
+		display: none;
+	}
+
 	.empty_text_tablet{
 		display: block;
-		font-size: 18px;
 		text-align: center;
 		opacity:0;
+		line-height: normal;
+		padding-top: 5px;
 	}
 
 	.pic_grid_b{
@@ -716,6 +724,10 @@ footer{
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 
+	.pic_subtitle{
+		line-height: normal;
+	}
+
 	.m{
 		flex: 50%;
     	max-width: 50%;
@@ -723,11 +735,12 @@ footer{
 
 	figcaption{
 		border: none;
-		padding: 0 5px 10px 10px;
+		padding: 0 10px 10px 10px;
 	}
 
 	.pic1{
 		grid-column: 1 / span 1;
+		padding-top: 0;
 	}
 
 	.pic2{
@@ -737,28 +750,28 @@ footer{
 	.pic3{
 		grid-row: 2 / span 1;
 		grid-column: 1 / span 1;
-		padding-top: 10px;
+		padding-top: 20px;
 		border-top: solid #8AD24B;
 	}
 
 	.pic4{
 		grid-row: 2 / span 1;
 		grid-column: 2 /span 1;
-		padding-top: 10px;
+		padding-top: 20px;
 		border-top: solid #8AD24B;
 	}
 
 	.pic5{
 		grid-row: 3 /span 1;
 		grid-column: 1 / span 1;
-		padding-top: 10px;
+		padding-top: 20px;
 		border-top: solid #8AD24B;
 	}
 
 	.pic6{
 		grid-row: 3 / span 1;
 		grid-column: 2 / span 1;
-		padding-top: 10px;
+		padding-top: 20px;
 		border-top: solid #8AD24B;
 		border-bottom: none;
 	}
@@ -769,11 +782,11 @@ footer{
 	}
 
 	.g_text .g_text_lp{
-		display: contents;
+		display: block;
 		font-weight:500;
 		font-size: 22px;
-		text-align: center;
 		padding-left: 20px;
+		padding-top: 10px; 
 	}
 
 	.g_text .g_text_rp{
@@ -782,7 +795,9 @@ footer{
 		font-size: 22px;
 		text-align: center;
 		padding-right: 20px;
+		padding-top: 10px;
 	}
+
 
 	.gallery .gal:nth-child(odd) {
 		display: flex;
@@ -823,41 +838,81 @@ footer{
 	}
 
 	.mobile_text{
-		display: contents;
+		display: block;
+		padding-right: 10px;
+		padding-left: 10px
 	}
 
 	.heading_full{
 		border: none;
 	}
 
-	.form-group .line{
-		display:block;
-		width: 50%;
-	}
-
-	button{
-		width: 35%;
+	#contact_line .line{
+		display: block;
+		width: 60%;
 	}
 
 	.form-group{
+		display:contents;
+	}
+
+	.form_container{
+		display: flex;
+		flex-direction: column;
 		align-items: center;
+		justify-items: center;
+		padding: 20px;
+	}
+
+	.form_container label{
+		display: flex;
+		width: 60%;
+		text-align: left;
 	}
 
 	input {
-		width: 50%;
+		width: 60%;
 	}
 	
 	input[type="text"], input[type="email"], textarea{
-		width: 50%;
+		width: 60%;
 	}
 
 	button{
-		width: 20%;
+		width: 25%;
+	} 
+
+	#full_page_container{
+		position: relative;
+  		min-height: 100vh;
 	}
+
+	footer{
+		margin-top: auto;
+		position: unset;
+	}
+
+	footer p{
+		font-size: 16px;
+	}
+
+	#contact{
+		color: white;
+		font-weight: 400px;
+		font-size: 15px;
+		text-decoration: none;
+	}
+
 }
 
 /* laptop/desktop */
 @media screen and (min-width: 992px) {
+	body{
+		font-size: 22px;
+		display: flex;
+		min-height: 100vh;
+		flex-direction: column;
+	}
 	.container{
 		padding: 0 25px;
 	}
@@ -871,13 +926,43 @@ footer{
 	}
 
 	.nav_links{
-		padding-right: 10px; 
+		padding-right: 15px; 
 	}
+
+	#about_image{
+	   animation-name: pic_grow;
+	   animation-duration: 4s;
+	   animation-iteration-count: 1;
+	 }
+	 
+	 @-webkit-keyframes pic_grow {
+	   from {
+		 width: 50px;
+		 opacity: 0.5;
+	   }
+	   to {
+		 width: 221px;
+		 opacity: 1;
+	   }
+	 }
+
+	 @keyframes pic_grow {
+		from {
+		  width: 50px;
+		  opacity: 0.5;
+		}
+		to {
+		  width: 221px;
+		  opacity: 1;
+		}
+	  }
 
 	#logo {
 		content: url("../images/header_logo1.png");
 		width: 500px;
 		height: auto;
+		margin-left: 15px;
+		padding-right: 10px;
 	}
 
 	.pic_img{
@@ -890,17 +975,27 @@ footer{
 		display: none;
 	}
 
-	.desktop_text{
+	.mobile_text{
 		display: none;
 	}
-	/* #line{
-		height:3px;
-		width: 75%;
-		border-color: #8AD24B;
-		background-color: #8AD24B;
-		margin: auto;
-		margin-top: 10px;
-	}  */
+
+	.desktop_text{
+		display: block;
+	}
+
+	.p_space_below{
+		text-align: left;
+	}
+
+	.p_space_above{
+		text-align: left;
+	}
+
+	.list_grid{
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		padding: 10px;
+
+	}
 
 	.pic_grid{
 		display: grid;
@@ -950,6 +1045,10 @@ footer{
 		padding: 15px;
 	}
 
+	.g_text .g_text_lp, .g_text .g_text_rp{
+		font-weight: 600;
+	}
+
 	/* https://tympanus.net/codrops/2011/11/02/original-hover-effects-with-css3/ */
 	.view {
 		display: flex;
@@ -984,7 +1083,9 @@ footer{
 		position: absolute;
 		background-color: #21597E80;
 		transform: scale(0) rotate(-180deg);
+		-webkit-transform: scale(0) rotate(-180deg);
 		transition: all 0.4s ease-in;
+		-webkit-transition: all 0.4s ease-in;
 		z-index: 2;
 	}
 
@@ -993,7 +1094,9 @@ footer{
 		align-content: center;
 		justify-content: center;
 		transform: scale(1) rotate(0deg);
+		-webkit-transform: scale(1) rotate(0deg);
 		transition-delay: 0.2s;
+		-webkit-transition-delay: 0.2s;
 		align-self: center;
 		z-index: 2;
 	}
@@ -1023,51 +1126,93 @@ footer{
 		opacity: 1;
 	}
 
+	.view:focus-within .mask{
+		transform: scale(1) rotate(0deg);
+		-webkit-transform: scale(1) rotate(0deg);
+	}
+
 	.empty_text{
 		display: block;
-		font-size: 18px;
 		text-align: center;
 		opacity:0;
+		line-height: normal;
 	}
 
 	.empty_text_tablet{
 		display: none;
 	}
 
-	.mobile_text{
-		display: none;
+	footer{
+		margin-top: auto;
+		position: unset;
 	}
 
-	.desktop_text{
-		display:contents;
+	footer p{
+		font-size: 16px;
 	}
+
+	#contact{
+		color: white;
+		font-weight: 400px;
+		font-size: 16px;
+		text-decoration: none;
+	}
+
+	#contact_line .line{
+		width: 50%;
+	}
+
+
+	.form_container label{
+		display: flex;
+		width: 50%;
+		text-align: left;
+	}
+
+	input {
+		width: 50%;
+	}
+	
+	input[type="text"], input[type="email"], textarea{
+		width: 50%;
+	}
+
+	button{
+		width: 15%;
+	} 
+
 }
 
 @media screen and (prefers-reduced-motion) {
 
+	html{
+		scroll-behavior: auto; /* Removes scroll animation */
+	}
+
 	.view .mask { 
-		transform: none;
+		transform: scale(0);
+		-webkit-transform: scale(0);
 		transition: none;
+		-webkit-transition: none;
 	}
 
-	.parallax_image_i, .parallax_image_b, .parallax_image_m, .parallax_image_t{
+	.parallax_image_b, .parallax_image_m{
 		background-attachment: initial;
+		background-size: contain;
 	}
 
-	.flip-card:hover .flip-card-inner,
-	.flip-card:focus-within .flip-card-inner,
-	.flip-card:active .flip-card-inner,
-	.flip-card:focus .flip-card-inner {
-  	transform: none;
+	.parallax_image_i, .parallax_image_t{
+		background-attachment: initial;
+		background-size: cover;
 	}
 
-	.flip-card:hover .flip-card-inner {
-		transform: none;
+	.flip-card .flip-card-inner {
+		transform: rotateY(180deg);
+		-webkit-transform: rotateY(180deg);
 	}
 
-	.flip-card-front a{
-		pointer-events: visible;
-	}
-
+	#about_image {
+		animation: none;
+	  }
 
 }

@@ -388,6 +388,10 @@ h1 {
 	text-align: center;
 }
 
+.pic_grid .line{
+	display: none;
+}
+
 .pic1{
 	padding-top: 10px;
 }
